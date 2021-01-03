@@ -4,8 +4,8 @@
 This project used `python:3.8` and following dependencies: 
 - pandas:1.1.5
 - nltk
-- scikitlearn
-- sqlalchemy
+- scikit-learn:0.23.2
+- sqlalchemy:1.3.21
 
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
