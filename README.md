@@ -1,5 +1,12 @@
 # Disaster Response Pipeline Project
 
+## Dependencies: 
+This project used `python:3.8` and following dependencies: 
+- pandas:1.1.5
+- nltk
+- scikitlearn
+- sqlalchemy
+
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
