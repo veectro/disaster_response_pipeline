@@ -2,8 +2,10 @@
 
 ## Dependencies: 
 This project used `python:3.8` and following dependencies: 
+- flask:1.1.2
+- nltk:3.5
 - pandas:1.1.5
-- nltk
+- plotly:4.14.1
 - scikit-learn:0.23.2
 - sqlalchemy:1.3.21
 
