@@ -1,0 +1,533 @@
+Loading data...
+    DATABASE: data/DisasterResponse.db
+Building model...
+Training model...
+Evaluating model...
+----Classification Report for category :category:related
+
+              precision    recall  f1-score   support
+
+           0       0.62      0.50      0.55      1217
+           1       0.85      0.91      0.88      3989
+
+    accuracy                           0.81      5206
+   macro avg       0.74      0.70      0.72      5206
+weighted avg       0.80      0.81      0.80      5206
+
+Accuracy : 0.811179408374952
+
+F1-Score : 0.8034256065527485
+
+----Classification Report for category :category:request
+
+              precision    recall  f1-score   support
+
+           0       0.92      0.96      0.94      4328
+           1       0.76      0.58      0.66       878
+
+    accuracy                           0.90      5206
+   macro avg       0.84      0.77      0.80      5206
+weighted avg       0.89      0.90      0.89      5206
+
+Accuracy : 0.8980023050326547
+
+F1-Score : 0.8921870830381897
+
+----Classification Report for category :category:offer
+
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      5179
+           1       0.00      0.00      0.00        27
+
+    accuracy                           0.99      5206
+   macro avg       0.50      0.50      0.50      5206
+weighted avg       0.99      0.99      0.99      5206
+
+Accuracy : 0.9936611601997695
+
+F1-Score : 0.9916506693659516
+
+----Classification Report for category :category:aid_related
+
+              precision    recall  f1-score   support
+
+           0       0.77      0.87      0.82      3058
+           1       0.77      0.63      0.69      2148
+
+    accuracy                           0.77      5206
+   macro avg       0.77      0.75      0.75      5206
+weighted avg       0.77      0.77      0.76      5206
+
+Accuracy : 0.7691125624279678
+
+F1-Score : 0.7645692888662607
+
+----Classification Report for category :category:medical_help
+
+              precision    recall  f1-score   support
+
+           0       0.94      0.98      0.96      4779
+           1       0.54      0.26      0.35       427
+
+    accuracy                           0.92      5206
+   macro avg       0.74      0.62      0.65      5206
+weighted avg       0.90      0.92      0.91      5206
+
+Accuracy : 0.9212447176334998
+
+F1-Score : 0.9083065464007379
+
+----Classification Report for category :category:medical_products
+
+              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.98      4942
+           1       0.61      0.30      0.40       264
+
+    accuracy                           0.95      5206
+   macro avg       0.78      0.65      0.69      5206
+weighted avg       0.95      0.95      0.95      5206
+
+Accuracy : 0.9546676911256243
+
+F1-Score : 0.9474110216073287
+
+----Classification Report for category :category:search_and_rescue
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.98      5066
+           1       0.38      0.15      0.21       140
+
+    accuracy                           0.97      5206
+   macro avg       0.68      0.57      0.60      5206
+weighted avg       0.96      0.97      0.96      5206
+
+Accuracy : 0.9704187475989243
+
+F1-Score : 0.9642015221879698
+
+----Classification Report for category :category:security
+
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99      5121
+           1       0.26      0.06      0.10        85
+
+    accuracy                           0.98      5206
+   macro avg       0.62      0.53      0.54      5206
+weighted avg       0.97      0.98      0.98      5206
+
+Accuracy : 0.9819439108720707
+
+F1-Score : 0.9762723796078678
+
+----Classification Report for category :category:military
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99      5031
+           1       0.67      0.35      0.46       175
+
+    accuracy                           0.97      5206
+   macro avg       0.83      0.67      0.73      5206
+weighted avg       0.97      0.97      0.97      5206
+
+Accuracy : 0.9725316941990012
+
+F1-Score : 0.9683746400699607
+
+----Classification Report for category :category:water
+
+              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98      4867
+           1       0.78      0.63      0.70       339
+
+    accuracy                           0.96      5206
+   macro avg       0.88      0.81      0.84      5206
+weighted avg       0.96      0.96      0.96      5206
+
+Accuracy : 0.9642719938532462
+
+F1-Score : 0.9625266346211127
+
+----Classification Report for category :category:food
+
+              precision    recall  f1-score   support
+
+           0       0.96      0.98      0.97      4621
+           1       0.80      0.69      0.74       585
+
+    accuracy                           0.95      5206
+   macro avg       0.88      0.83      0.85      5206
+weighted avg       0.94      0.95      0.94      5206
+
+Accuracy : 0.9454475605071072
+
+F1-Score : 0.9436316969585992
+
+----Classification Report for category :category:shelter
+
+              precision    recall  f1-score   support
+
+           0       0.96      0.98      0.97      4769
+           1       0.77      0.59      0.67       437
+
+    accuracy                           0.95      5206
+   macro avg       0.87      0.79      0.82      5206
+weighted avg       0.95      0.95      0.95      5206
+
+Accuracy : 0.9510180560891279
+
+F1-Score : 0.9481411253948027
+
+----Classification Report for category :category:clothing
+
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      5131
+           1       0.68      0.36      0.47        75
+
+    accuracy                           0.99      5206
+   macro avg       0.83      0.68      0.73      5206
+weighted avg       0.99      0.99      0.99      5206
+
+Accuracy : 0.9882827506723012
+
+F1-Score : 0.986519604740007
+
+----Classification Report for category :category:money
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99      5083
+           1       0.62      0.34      0.44       123
+
+    accuracy                           0.98      5206
+   macro avg       0.80      0.67      0.71      5206
+weighted avg       0.98      0.98      0.98      5206
+
+Accuracy : 0.979446792162889
+
+F1-Score : 0.9765428598770494
+
+----Classification Report for category :category:missing_people
+
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      5146
+           1       0.50      0.15      0.23        60
+
+    accuracy                           0.99      5206
+   macro avg       0.75      0.57      0.61      5206
+weighted avg       0.98      0.99      0.99      5206
+
+Accuracy : 0.9884748367268537
+
+F1-Score : 0.9853953287483149
+
+----Classification Report for category :category:refugees
+
+              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98      5030
+           1       0.55      0.26      0.35       176
+
+    accuracy                           0.97      5206
+   macro avg       0.76      0.62      0.67      5206
+weighted avg       0.96      0.97      0.96      5206
+
+Accuracy : 0.9677295428351902
+
+F1-Score : 0.9620001869801488
+
+----Classification Report for category :category:death
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.98      4965
+           1       0.73      0.50      0.59       241
+
+    accuracy                           0.97      5206
+   macro avg       0.85      0.74      0.79      5206
+weighted avg       0.96      0.97      0.97      5206
+
+Accuracy : 0.9683058009988474
+
+F1-Score : 0.9654148329717382
+
+----Classification Report for category :category:other_aid
+
+              precision    recall  f1-score   support
+
+           0       0.89      0.98      0.93      4538
+           1       0.51      0.16      0.25       668
+
+    accuracy                           0.87      5206
+   macro avg       0.70      0.57      0.59      5206
+weighted avg       0.84      0.87      0.84      5206
+
+Accuracy : 0.8726469458317326
+
+F1-Score : 0.8428005087175259
+
+----Classification Report for category :category:infrastructure_related
+
+              precision    recall  f1-score   support
+
+           0       0.94      0.99      0.97      4883
+           1       0.39      0.13      0.19       323
+
+    accuracy                           0.93      5206
+   macro avg       0.67      0.56      0.58      5206
+weighted avg       0.91      0.93      0.92      5206
+
+Accuracy : 0.9337303111794084
+
+F1-Score : 0.9174628367618525
+
+----Classification Report for category :category:transport
+
+              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.98      4955
+           1       0.56      0.22      0.31       251
+
+    accuracy                           0.95      5206
+   macro avg       0.76      0.60      0.64      5206
+weighted avg       0.94      0.95      0.94      5206
+
+Accuracy : 0.954091432961967
+
+F1-Score : 0.9441915723379083
+
+----Classification Report for category :category:buildings
+
+              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98      4946
+           1       0.64      0.38      0.48       260
+
+    accuracy                           0.96      5206
+   macro avg       0.80      0.69      0.73      5206
+weighted avg       0.95      0.96      0.95      5206
+
+Accuracy : 0.9585094122166731
+
+F1-Score : 0.953538926135187
+
+----Classification Report for category :category:electricity
+
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99      5100
+           1       0.61      0.26      0.37       106
+
+    accuracy                           0.98      5206
+   macro avg       0.80      0.63      0.68      5206
+weighted avg       0.98      0.98      0.98      5206
+
+Accuracy : 0.9815597387629658
+
+F1-Score : 0.9779741324113204
+
+----Classification Report for category :category:tools
+
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00      5175
+           1       0.00      0.00      0.00        31
+
+    accuracy                           0.99      5206
+   macro avg       0.50      0.50      0.50      5206
+weighted avg       0.99      0.99      0.99      5206
+
+Accuracy : 0.9925086438724549
+
+F1-Score : 0.9903079595179703
+
+----Classification Report for category :category:hospitals
+
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      5143
+           1       0.27      0.11      0.16        63
+
+    accuracy                           0.99      5206
+   macro avg       0.63      0.55      0.58      5206
+weighted avg       0.98      0.99      0.98      5206
+
+Accuracy : 0.9855935459085671
+
+F1-Score : 0.9826247639188822
+
+----Classification Report for category :category:shops
+
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      5186
+           1       0.00      0.00      0.00        20
+
+    accuracy                           1.00      5206
+   macro avg       0.50      0.50      0.50      5206
+weighted avg       0.99      1.00      0.99      5206
+
+Accuracy : 0.9950057625816365
+
+F1-Score : 0.9936645262369281
+
+----Classification Report for category :category:aid_centers
+
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      5140
+           1       0.19      0.06      0.09        66
+
+    accuracy                           0.98      5206
+   macro avg       0.59      0.53      0.54      5206
+weighted avg       0.98      0.98      0.98      5206
+
+Accuracy : 0.9848252016903573
+
+F1-Score : 0.9809337534538842
+
+----Classification Report for category :category:other_infrastructure
+
+              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.98      4991
+           1       0.30      0.11      0.16       215
+
+    accuracy                           0.95      5206
+   macro avg       0.63      0.55      0.57      5206
+weighted avg       0.94      0.95      0.94      5206
+
+Accuracy : 0.9527468305800999
+
+F1-Score : 0.9421351002651918
+
+----Classification Report for category :category:weather_related
+
+              precision    recall  f1-score   support
+
+           0       0.88      0.95      0.92      3723
+           1       0.85      0.68      0.75      1483
+
+    accuracy                           0.87      5206
+   macro avg       0.87      0.81      0.83      5206
+weighted avg       0.87      0.87      0.87      5206
+
+Accuracy : 0.8737994621590472
+
+F1-Score : 0.8690499804403269
+
+----Classification Report for category :category:floods
+
+              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.97      4781
+           1       0.80      0.54      0.64       425
+
+    accuracy                           0.95      5206
+   macro avg       0.88      0.76      0.81      5206
+weighted avg       0.95      0.95      0.95      5206
+
+Accuracy : 0.9512101421436804
+
+F1-Score : 0.9469055915443308
+
+----Classification Report for category :category:storm
+
+              precision    recall  f1-score   support
+
+           0       0.95      0.98      0.97      4717
+           1       0.75      0.54      0.62       489
+
+    accuracy                           0.94      5206
+   macro avg       0.85      0.76      0.80      5206
+weighted avg       0.93      0.94      0.93      5206
+
+Accuracy : 0.9394928928159816
+
+F1-Score : 0.9349199648274515
+
+----Classification Report for category :category:fire
+
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      5148
+           1       0.52      0.22      0.31        58
+
+    accuracy                           0.99      5206
+   macro avg       0.76      0.61      0.65      5206
+weighted avg       0.99      0.99      0.99      5206
+
+Accuracy : 0.9890510948905109
+
+F1-Score : 0.9868919955843055
+
+----Classification Report for category :category:earthquake
+
+              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98      4685
+           1       0.90      0.75      0.82       521
+
+    accuracy                           0.97      5206
+   macro avg       0.94      0.87      0.90      5206
+weighted avg       0.97      0.97      0.97      5206
+
+Accuracy : 0.9669611986169804
+
+F1-Score : 0.9656595104100791
+
+----Classification Report for category :category:cold
+
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99      5107
+           1       0.54      0.29      0.38        99
+
+    accuracy                           0.98      5206
+   macro avg       0.76      0.64      0.68      5206
+weighted avg       0.98      0.98      0.98      5206
+
+Accuracy : 0.9817518248175182
+
+F1-Score : 0.9791082914724188
+
+----Classification Report for category :category:other_weather
+
+              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.97      4930
+           1       0.43      0.19      0.26       276
+
+    accuracy                           0.94      5206
+   macro avg       0.69      0.59      0.62      5206
+weighted avg       0.93      0.94      0.93      5206
+
+Accuracy : 0.9435266999615828
+
+F1-Score : 0.9330351974886515
+
+----Classification Report for category :category:direct_report
+
+              precision    recall  f1-score   support
+
+           0       0.89      0.96      0.93      4241
+           1       0.73      0.50      0.60       965
+
+    accuracy                           0.87      5206
+   macro avg       0.81      0.73      0.76      5206
+weighted avg       0.86      0.87      0.86      5206
+
+Accuracy : 0.8739915482135997
+
+F1-Score : 0.8644701610037949
+
+Saving model...
+    MODEL: models/classifier.pkl
+Trained model saved!
