@@ -27,7 +27,9 @@ def clean_data(df: DataFrame) -> DataFrame:
     each category.
 
     - process the `categories` column
-    - replace `categories` column with the 36 new created columns
+    - remove column `category:child_alone`
+    - replace `categories` column with the 35 new created columns
+    - remove the rows containing value `2` (must be after the merge, otherwise the length will not be the same)
     - dropping
 
     :param df: dataframe that need to be cleaned
@@ -35,9 +37,16 @@ def clean_data(df: DataFrame) -> DataFrame:
     """
     categories = prepare_categories_column(df)
 
+
+    # drop only value `0`from column `category:child_alone`
+    categories.drop('category:child_alone', axis=1, inplace=True)
+
     # replacing the `categories` column with the new splitted columns
     df.drop(columns=['categories'], inplace=True)
     df = pd.concat([df, categories], axis=1)
+
+    # from the notebook, we need to remove the rows with value contains 2
+    df = df[df['category:related'] != 2]
 
     # drop duplicates of row
     df.drop_duplicates(inplace=True)
@@ -50,10 +59,9 @@ def prepare_categories_column(df: DataFrame) -> DataFrame:
     then rename the last 36 columns (category) with the category name prefixed with
     `category:`.
 
-    Then remove the rows containing value `2` and remove column `category:child_alone`
 
     :param df: the original dataframe containing `categories`
-    :return: a panda dataframe containing 36 `categories` as each column
+    :return: a panda dataframe containing 35 `categories` as each column
     """
     # create a dataframe of the 36 individual category columns
     categories = df['categories'].str.split(';', expand=True)
@@ -73,12 +81,6 @@ def prepare_categories_column(df: DataFrame) -> DataFrame:
 
         # convert column from string to numeric
         categories[column] = pd.to_numeric(categories[column])
-
-    # from the notebook, we need to remove the rows with value contains 2
-    categories = categories[categories['category:related'] != 2]
-
-    # drop only value `0`from column `category:child_alone`
-    categories.drop('category:child_alone', axis=1, inplace=True)
 
     return categories
 
