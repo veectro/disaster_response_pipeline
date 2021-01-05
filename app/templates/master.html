@@ -23,7 +23,7 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="https://www.udacity.com/">Made with Udacity</a></li>
-                <li><a href="https://github.com/">Contact</a></li>
+                <li><a href="https://github.com/veectro/disaster_response_pipeline">Source Code</a></li>
             </ul>
         </div>
     </div>
@@ -39,11 +39,18 @@
         <div class="row">
             <div class="col-lg-12 form-group-lg">
                 <form action="/go" method="get">
-                    <input type="text" class="form-control form-control-lg" name="query" placeholder="Enter a message to classify">
-                    <div class="col-lg-offset-5">
+                    <input id="text_query" type="text" class="form-control form-control-lg" name="query" placeholder="Enter a message to classify">
+                    <div class="col text-center">
                         <button type="submit" class="btn btn-lg btn-success">Classify Message</button>
                     </div>
                 </form>
+                <div class="col text-center">
+                    {% if request.endpoint == 'go' %}
+                    <a class="btn btn-lg btn-warning" href="{{ url_for('index')}}">Reset</a>
+                    {% else %}
+                    <button id="btn_rand" class="btn btn-lg btn-primary">Put random message</button>
+                    {% endif %}
+                </div>
             </div>
         </div>
 
@@ -59,9 +66,13 @@
         </div>
     {% endblock %}
 
-    {% for id in ids %}
-        <div id="{{id}}"></div>
-    {% endfor %}
+    <div class="row">
+        {% for id in ids %}
+            <div class="col-md-6" >
+                <div id="{{id}}"></div>
+            </div>
+        {% endfor %}
+    </div>
 </div>
 
 <script type="text/javascript">
@@ -71,6 +82,16 @@
         Plotly.plot(ids[i], graphs[i].data, graphs[i].layout);
     }
 </script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $( "#btn_rand" ).click(function() {
+            const messages = {{messages | safe}};
+            $("#text_query").val(messages[Math.floor(Math.random() * messages.length)]);
+        });
+    });
+</script>
+
 
 </body>
 </html>
