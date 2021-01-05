@@ -47,7 +47,6 @@ def calculate_target_frequency(df: DataFrame) -> DataFrame:
     cats = []
     frequency = []
     for col in Y.columns:
-        print(f'{col[9:]} has {Y[col][Y[col] == True].sum()} ')
         cats.append(col[9:])
         frequency.append(Y[col][Y[col] == True].sum())
 
