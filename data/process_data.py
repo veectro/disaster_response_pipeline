@@ -50,6 +50,8 @@ def prepare_categories_column(df: DataFrame) -> DataFrame:
     then rename the last 36 columns (category) with the category name prefixed with
     `category:`.
 
+    Then remove the rows containing value `2` and remove column `category:child_alone`
+
     :param df: the original dataframe containing `categories`
     :return: a panda dataframe containing 36 `categories` as each column
     """
@@ -71,6 +73,12 @@ def prepare_categories_column(df: DataFrame) -> DataFrame:
 
         # convert column from string to numeric
         categories[column] = pd.to_numeric(categories[column])
+
+    # from the notebook, we need to remove the rows with value contains 2
+    categories = categories[categories['category:related'] != 2]
+
+    # drop only value `0`from column `category:child_alone`
+    categories.drop('category:child_alone', axis=1, inplace=True)
 
     return categories
 
