@@ -87,3 +87,12 @@ This project used `python:3.8` and following dependencies:
 ![Main Page](img/main.png?raw=true "Main Menu")
 ### Result
 ![Classify Page](img/result.png?raw=true)
+
+
+---
+
+## Acknowledgements
+Credit and thanks too:
+
+- Udacity for providing a great data scientist course.
+- Figure Eight to providing a great data.
